@@ -1,6 +1,12 @@
 .header {
+
+    &__logo {
+        transform: scale(0.75);
+    }
+
     &__nav {
         float: right;
+        color: $mainBlue;
 
         & li {
             display: inline-block;
@@ -10,5 +16,9 @@
 
     &__user-links {
         float: right;
+
+        & > a:first-of-type {
+            margin-right: 1rem;
+        }
     }
 }
