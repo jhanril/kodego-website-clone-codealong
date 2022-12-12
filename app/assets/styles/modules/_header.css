@@ -1,23 +1,29 @@
-.header {
-  &__logo {
-    transform: scale(0.75);
-  }
+@media (min-width: 768px) {
+}
 
-  &__nav {
-    float: right;
-    color: $mainBlue;
-
-    & li {
-      display: inline-block;
-      margin-right: 1.5em;
+/* Large desktop styles */
+@media (min-width: 1024px) {
+  .header {
+    &__logo {
+      transform: scale(0.75);
     }
-  }
 
-  &__user-links {
-    float: right;
+    &__nav {
+      float: right;
+      color: $mainBlue;
 
-    & > a:first-of-type {
-      margin-right: 1rem;
+      & li {
+        display: inline-block;
+        margin-right: 1.5em;
+      }
+    }
+
+    &__user-links {
+      float: right;
+
+      & > a:first-of-type {
+        margin-right: 1rem;
+      }
     }
   }
 }

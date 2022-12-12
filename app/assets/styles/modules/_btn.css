@@ -1,14 +1,21 @@
-.btn {
-  padding: 1.25rem 1rem;
-  display: inline-block;
-  border-radius: 5px;
-  color: $mainGreen;
+/* Tablet and desktop styles */
+@media (min-width: 768px) {
+}
 
-  &--primary {
-    background-color: $mainGreen;
-    color: #fff;
-  }
-  &--wide {
-    padding: 1.2rem 8em;
+/* Large desktop styles */
+@media (min-width: 1024px) {
+  .btn {
+    padding: 1.25rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    color: $mainGreen;
+
+    &--primary {
+      background-color: $mainGreen;
+      color: #fff;
+    }
+    &--wide {
+      padding: 1.2rem 8em;
+    }
   }
 }
