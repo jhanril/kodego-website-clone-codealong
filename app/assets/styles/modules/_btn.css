@@ -3,13 +3,14 @@
   display: inline-block;
   border-radius: 5px;
   color: $mainGreen;
+  margin: 2.5rem 0;
 
   &--primary {
     background-color: $mainGreen;
     color: #fff;
   }
   &--wide {
-    padding: 1.2rem 8em;
+    padding: 1em 6em;
   }
   &--close {
     filter: opacity(0.5);
@@ -18,6 +19,14 @@
 
 /* Tablet and desktop styles */
 @media (min-width: 768px) {
+}
+
+@media (min-width: 990px) {
+  .btn {
+    &--wide {
+      padding: 1.2rem 8em;
+    }
+  }
 }
 
 /* Large desktop styles */
