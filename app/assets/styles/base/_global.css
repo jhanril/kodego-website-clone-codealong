@@ -9,3 +9,12 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
+
+button {
+  border-style: none;
+  background: none;
+}
+
+li {
+  list-style: none;
+}
