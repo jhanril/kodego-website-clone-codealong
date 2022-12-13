@@ -1,15 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  &--padded {
+    padding: 1.25rem;
+  }
+}
 @media (min-width: 768px) {
 }
 
 /* Large desktop styles */
-@media (min-width: 1024px) {
+@media (min-width: 990px) {
   .container {
-    width: 85%;
+    width: 90%;
     margin: auto;
     /* border: 1px solid; */
 
     &--padded {
       padding: 1.25rem;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    &--padded {
+      padding: 1.5rem 1.25rem;
     }
   }
 }

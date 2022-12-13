@@ -10,14 +10,20 @@
 
 <body>
 	<header class="header">
-		<div class="container container--padded">
+		<div class="container container--padded header__container">
 			<img class="header__logo" src="assets/images/kodego-large.svg" alt="KodeGo Logo">
-			<div class="header__user-links">
-				<a class="btn" href="">Sign In</a>
-				<a class="btn btn--primary" href="">Apply Now</a>
-			</div>
-			<nav class="header__nav">
+			<button class="header__hamburger">
+				<a href="#nav-toogle">
+					<img src="assets/images/hamburger.svg" alt="">
+				</a>
+			</button>
+			<nav class="header__nav" id="nav-toogle">
 				<ul>
+					<li class="btn--close">
+						<a href="#">
+							<img src="assets/images/close.svg" alt="">
+						</a>
+					</li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">How it works</a></li>
 					<li><a href="#">Course</a></li>
@@ -25,12 +31,16 @@
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Careers</a></li>
 					<li><a href="#">FAQ</a></li>
+					<div class="header__user-links">
+						<a class="btn" href="">Sign In</a>
+						<a class="btn btn--primary" href="">Apply Now</a>
+					</div>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<section class="hero hero__banner">
+	<!-- <section class="hero hero__banner">
 		<div class="hero__container container">
 			<div class="hero__text-content">
 				<h1 class="hero__heading">
@@ -47,7 +57,7 @@
 				<img class="hero__image" src="assets/images/hero-banner-image.png" alt="KodeGo Banner Image">
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<script src="bundled.js"></script>
